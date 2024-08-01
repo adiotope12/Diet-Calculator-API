@@ -8,7 +8,7 @@ GET Request: Base Url/id
 
 POST Request: Base Url/id(Make your Own)/height(ex: 5.11,6.0)/weight/age/gender/Workouts Per Week
 
-PUT Request: Base Url?params
+PUT Request: Base Url?params (?height=5.11)
 
 DELETE Request: Base Url/id
 
