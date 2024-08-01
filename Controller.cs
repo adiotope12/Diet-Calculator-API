@@ -14,9 +14,9 @@ namespace Api_Project.Controllers
     [Route("[controller]")]
     public class Controller : ControllerBase
     {
-        private static SecretClient _client = new SecretClient(vaultUri: new Uri("https://myserverstatuskeyvault12.vault.azure.net/"), credential: new DefaultAzureCredential());
+        private static SecretClient _client = new SecretClient(vaultUri: new Uri("keyvaultendpt"), credential: new DefaultAzureCredential());
         private static KeyVaultSecret _secret = _client.GetSecret("ApiKeyThingy");
-        private static CosmosClient _cosmosDB = new CosmosClient(@"https://apicosmosdb12.documents.azure.com:443/", _secret.Value);
+        private static CosmosClient _cosmosDB = new CosmosClient(@"cosmosdbendpt", _secret.Value);
         private static Microsoft.Azure.Cosmos.Container _Results = _cosmosDB.GetContainer("ApiStorage", "Results");
         private readonly ILogger<Controller> _logger;
         public Controller(ILogger<Controller> logger)
