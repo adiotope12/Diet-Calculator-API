@@ -1,6 +1,6 @@
 # Diet-Calculator-API
 
-As a computer science major I've heard a lot about APIs, the only problem is that I don't know a lot about APIs. I decided to create an API in order to learn more about API usage and creation. I used Azure Web App Service and Azure API Management. This API is based off of a much smaller project I did to refresh my knowledge of C++ (https://github.com/adiotope12/Diet-Calculator). This project is similar however gives the user more information and stores the data in a Azure CosmosDB for later access. Here is an example with some of my information: https://topeadioapi.azure-api.net/Tope.
+As a computer science major I've heard a lot about APIs, the only problem is that I don't know a lot about APIs. I decided to create an API in order to learn more about API usage and creation. I used Azure Web App Service and Azure API Management. This API is based off of a much smaller project I did to refresh my knowledge of C++ (https://github.com/adiotope12/Diet-Calculator). This project is similar however gives the user more information and stores the data in a Azure CosmosDB for later access. Data is access by their id which is set by the user during a POST request. Here is an example with some of my information: https://topeadioapi.azure-api.net/Tope.
 
 Base Url: https://topeadioapi.azure-api.net/
 
