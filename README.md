@@ -6,7 +6,7 @@ Base Url: https://topeadioapi.azure-api.net/
 
 GET Request: Base Url/id
 
-POST Request: Base Url/id/height(ex: 5.11,6.0)/weight/age/gender/Workouts Per Week
+POST Request: Base Url/id(Make your Own)/height(ex: 5.11,6.0)/weight/age/gender/Workouts Per Week
 
 PUT Request: Base Url?params
 
